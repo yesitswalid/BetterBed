@@ -1,0 +1,6 @@
+name: BetterBed
+author: ExZeEZ
+version: 1.0
+api: 3.9.3
+
+main: ExZeEZ\BetterBed\Main
