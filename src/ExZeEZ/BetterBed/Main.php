@@ -32,6 +32,7 @@ class Main extends PluginBase implements Listener
                 }
                 if ($sender->hasPermission("exzeez.ptime")) {
                     if (isset($args[0])) {
+                        if($args[0] == "set"){
                         if (isset($args[1])) {
                             if (is_numeric($args[1])) {
                                 if ($args[1] > 0 && $args[1] < 12000) {
@@ -46,6 +47,7 @@ class Main extends PluginBase implements Listener
                             }
                         } else {
                             $sender->sendMessage(TextFormat::RED . "Use the command in this example! /ptime set 6000");
+                            }
                         }
                     }
                 }
